@@ -36,7 +36,7 @@ Deface::Override.new(:virtual_path      => "spree/layouts/spree_application",
                      :name              => "top_home_override",
                      :replace           => "#top-nav-bar",
                      :text              => "",
-                     :disabled          => false)
+                     :disabled          => true)
 
 Deface::Override.new(:virtual_path      => "spree/layouts/spree_application",
                      :name              => "footer_override",
@@ -49,5 +49,5 @@ Deface::Override.new(:virtual_path      => "spree/shared/_nav_bar",
                      :name              => "search_bar_override",
                      :replace           => "#search-bar",
                      :text              => "",
-                    :disabled          => false)
+                     :disabled          => true)
 

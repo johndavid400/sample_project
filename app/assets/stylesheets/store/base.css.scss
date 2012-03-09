@@ -11,12 +11,15 @@ body {
   padding-top: 10px;
 }
 
+.taxons{
+  margin-top: 120px;
+}
+
 ul.menu {
   list-style-type:none;
   margin:0;
   padding:0;
   margin-top: -20px;
-
   a:link,a:visited {
     display:block;
     font-weight:bold;
@@ -29,7 +32,33 @@ ul.menu {
     text-transform:uppercase;
     float: left;
   }
+  a:hover,a:active{
+    background-color:#bdc236;
+    color: white !important;
+  }
+}
 
+.taxon_clear {
+  clear: both;
+}
+
+ul.menu.taxons {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  margin-top: -20px;
+  a:link,a:visited {
+    display:block;
+    font-weight:bold;
+    color:#FFFFFF;
+    background-color:#C18137;
+    width:124px;
+    padding: 10px 0px 10px 0px;
+    text-align:center;
+    text-decoration:none;
+    text-transform:uppercase;
+    float: left;
+  }
   a:hover,a:active{
     background-color:#bdc236;
     color: white !important;
@@ -44,4 +73,14 @@ span#slider-body {
   width:280px;
   padding: 10px 10px 10px 10px;
   float: right;
+}
+
+.user_info {
+  margin-top: -50px;
+  background: #EFB673;
+  border: 1px black dotted;
+  padding: 5px 5px 5px 5px;
+  float: right;
+  width: 300px;
+  margin-right: 5px;
 }

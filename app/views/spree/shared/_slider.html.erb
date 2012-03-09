@@ -14,19 +14,19 @@
     <div class="ribbon"></div>
     <div id="slider" class="nivoSlider">
       <% Spree::Slide.published.each do |s| %>
-
-          <% if s.body != "" %>
-            <span id="slider-body" >
-              <%= link_to image_tag(s.image.url, :title => '#' + s.name.to_url), s.link_url %>
-              <%= s.body.html_safe %>
-            </span>
-          <% else %>
-            <span id="slider-body" >
-              <%= link_to image_tag(s.image.url), s.link_url %>
-              <%= s.body.html_safe %>
-            </span>
-          <% end %>
-
+        <% if s.body != "" %>
+          <span id="slider-body" >
+            <%= link_to image_tag(s.image.url, :title => '#' + s.name.to_url), s.link_url %>
+            <h3><center>Shot of the Week</center></h3>
+            <%= s.body.html_safe %>
+          </span>
+        <% else %>
+          <span id="slider-body" >
+            <%= link_to image_tag(s.image.url), s.link_url %>
+            <h3><center>Shot of the Week</center></h3>
+            <%= s.body.html_safe %>
+          </span>
+        <% end %>
       <% end %>
     </div>
 

@@ -1,0 +1,23 @@
+%ul.user_info
+  %li.cart
+    %h3
+      %center= link_to_cart
+  %li
+    - @body_id = 'login'
+    #existing-customer
+      %div{"data-hook" => "login"}
+        %h4= "Login"
+        = form_for :user, :url => spree.user_session_path do |f|
+          #password-credentials
+            %p
+              = f.label :email, t(:email)
+              %br/
+              = f.email_field :email, :class => 'title'
+              = f.label :password, t(:password)
+              %br/
+              = f.password_field :password, :class => 'title'
+          %p= f.submit t(:login), :class => 'button primary'
+        = t(:or)
+        = link_to t(:create_a_new_account), spree.signup_path
+        | #{link_to t(:forgot_password), spree.new_user_password_path}
+    %div{"data-hook" => "login_extras"}
