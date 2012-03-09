@@ -11,8 +11,9 @@
 
  *= require_self
  *= require_tree .
+ *= require themes/default/default
+ *= require themes/pascal/pascal
+ *= require themes/orman/orman
+ *= require nivo-slider
 */
 
-body {
-  background: red;
-}

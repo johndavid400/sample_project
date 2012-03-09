@@ -1,0 +1,40 @@
+<% if Spree::Slide.published.count > 0 %>
+  <style type="text/css"> 
+    .theme-default #slider {
+      margin:0 auto 0 auto;
+      width:618px; /* Make sure your images are the same size */
+      height:246px; /* Make sure your images are the same size */
+    }
+    .slider-wrapper {
+      margin:0 auto 50px auto;
+    }
+  </style>
+
+  <div class="slider-wrapper theme-default">
+    <div class="ribbon"></div>
+    <div id="slider" class="nivoSlider">
+      <% Spree::Slide.published.each do |s| %>
+
+          <% if s.body != "" %>
+            <span id="slider-body" >
+              <%= link_to image_tag(s.image.url, :title => '#' + s.name.to_url), s.link_url %>
+              <%= s.body.html_safe %>
+            </span>
+          <% else %>
+            <span id="slider-body" >
+              <%= link_to image_tag(s.image.url), s.link_url %>
+              <%= s.body.html_safe %>
+            </span>
+          <% end %>
+
+      <% end %>
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+        });
+  </script>
+<% end %>

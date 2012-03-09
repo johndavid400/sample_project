@@ -1,0 +1,47 @@
+body {
+  background: url('body-bg.jpg') center fixed no-repeat #977148;
+}
+
+.container {
+  background: white;
+  margin-top: 25px;
+  width: 937px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+ul.menu {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  margin-top: -20px;
+
+  a:link,a:visited {
+    display:block;
+    font-weight:bold;
+    color:#FFFFFF;
+    background-color:#C18137;
+    width:134px;
+    padding: 10px 0px 10px 0px;
+    text-align:center;
+    text-decoration:none;
+    text-transform:uppercase;
+    float: left;
+  }
+
+  a:hover,a:active{
+    background-color:#bdc236;
+    color: white !important;
+  }
+}
+
+#slider {
+  float: left;
+}
+
+span#slider-body {
+  width:280px;
+  padding: 10px 10px 10px 10px;
+  float: right;
+}

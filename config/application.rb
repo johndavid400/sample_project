@@ -11,7 +11,7 @@ end
 
 module Grassland
   class Application < Rails::Application
-  
+
     config.to_prepare do
       # Load application's model / class decorators
       Dir.glob(File.join(File.dirname(__FILE__), "../app/**/*_decorator*.rb")) do |c|
@@ -53,7 +53,7 @@ module Grassland
     config.filter_parameters += [:password]
 
     # Enable the asset pipeline
-#    config.assets.enabled = true
+    config.assets.enabled = true
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
