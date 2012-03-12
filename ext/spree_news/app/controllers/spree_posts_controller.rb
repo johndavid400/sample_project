@@ -1,0 +1,2 @@
+class SpreePostsController < ApplicationController
+end
