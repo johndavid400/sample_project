@@ -30,6 +30,5 @@ end
 
 # spree related gems
 gem 'spree'
-gem 'spree_usa_epay', :git => 'git://github.com/spree/spree_usa_epay.git', :ref => '0cb57b4afbf1eef6a0ad67a4a1ea506c6418fde1'
-gem 'spree_skrill', :git => 'git://github.com/spree/spree_skrill.git', :ref => '37e6159aa71ec053499e2c7aa9cf799a3b3bdb39'
 gem 'spree_slider'
+gem 'spree_news', :path => 'ext/spree_news', :require => 'spree_news'

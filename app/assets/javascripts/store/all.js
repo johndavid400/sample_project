@@ -12,3 +12,4 @@
 
 //= require_tree .
 //= require jquery.nivo.slider.pack.js
+//= require store/spree_news
