@@ -1,0 +1,6 @@
+.product-home-image
+  = link_to small_image(product, :itemprop => "name"), product
+.product-home-desc
+  = link_to truncate(product.name, :length => 50), product, :class => 'info', :itemprop => "name", :title => product.name
+  %br
+  %span.price.selling{:itemprop => "price"}= number_to_currency product.price

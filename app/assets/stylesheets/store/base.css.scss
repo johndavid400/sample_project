@@ -84,3 +84,17 @@ span#slider-body {
   width: 300px;
   margin-right: 5px;
 }
+
+.products-home {
+  border: 1px black solid;
+  margin-left: 10px;
+  margin-top: 15px;
+  padding: 10px 12px 10px 12px;
+
+  .product-home-image{
+    margin: 10px 0px 0px 25px;
+  }
+  .product-home-desc {
+    text-align: center;
+  }
+}
