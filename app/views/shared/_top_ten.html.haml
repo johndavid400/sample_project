@@ -1,0 +1,10 @@
+.top-ten
+  %center.title-ten
+    %h2 Top 10 Products
+  - @popular.each do |variant|
+    - if Spree::Config[:show_zero_stock_products] || variant.product.has_stock?
+      .popular-products
+        .products-top-ten
+          = link_to mini_image(variant.product, :itemprop => "name"), variant.product
+          = link_to truncate(variant.product.name, :length => 50), variant.product, :class => 'info', :itemprop => "name", :title => variant.product.name
+          %span.price.selling{:itemprop => "price"}= number_to_currency variant.product.price

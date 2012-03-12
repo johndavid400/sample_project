@@ -98,3 +98,23 @@ span#slider-body {
     text-align: center;
   }
 }
+
+.top-ten {
+  background: #B77831;
+  color: white;
+  border: black 1px solid;
+  width: 310px;
+  margin-left: 623px;
+  margin-top: -60px;
+  .title-ten {
+    margin-top: 10px;
+  }
+  .popular-products {
+    background: white;
+    padding: 5px;
+    z-index: -1;
+  }
+  .products-top-ten {
+    border: 1px black solid;
+  }
+}

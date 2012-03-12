@@ -4,9 +4,9 @@
     - if Spree::Config[:show_zero_stock_products] || product.has_stock?
       - if x >= 3
         - x = 0
-        %li.columns.three.products-home.text_clear
+        .columns.three.products-home.text_clear
           = render 'shared/product_list', :product => product
       -else 
-        %li.columns.three.products-home
+        .columns.three.products-home
           = render 'shared/product_list', :product => product
       - x = x + 1
