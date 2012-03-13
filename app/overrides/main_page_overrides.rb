@@ -4,7 +4,7 @@ Deface::Override.new(:virtual_path      => "spree/home/index",
                      :name              => "sidebar_override",
                      :replace           => "[data-hook='homepage_sidebar_navigation']",
                      :text              => "",
-                     :disabled          => false)
+                     :disabled          => true)
 
 Deface::Override.new(:virtual_path      => "spree/home/index",
                      :name              => "products_override",
