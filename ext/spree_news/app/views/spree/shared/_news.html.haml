@@ -1,0 +1,8 @@
+.news-ticker
+  %center
+    %u
+      %h3 Latest News
+  %p
+  - @posts.each do |post|
+    %h6= post.created_at.strftime("%B %d, %Y")
+    = post.description
