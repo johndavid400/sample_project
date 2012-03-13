@@ -32,3 +32,4 @@ end
 gem 'spree'
 gem 'spree_slider'
 gem 'spree_news', :path => 'ext/spree_news', :require => 'spree_news'
+gem 'spree_static_content', :git => 'http://github.com/spree/spree_static_content', :branch => "1-0-stable"
