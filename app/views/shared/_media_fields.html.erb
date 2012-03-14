@@ -1,0 +1,11 @@
+<%= f.field_container :video_link do %>
+  <%= f.label :video_link, t(:video_link) %> <br />
+  <%= f.text_field :video_link, :class => 'fullwidth title' %>
+  <%= f.error_message_on :video_link %>
+<% end %>
+
+<%= f.field_container :sound_link do %>
+  <%= f.label :sound_link, t(:sound_link) %> <br />
+  <%= f.text_field :sound_link, :class => 'fullwidth title' %>
+  <%= f.error_message_on :sound_link %>
+<% end %>

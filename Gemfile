@@ -5,7 +5,6 @@ gem 'pg'
 
 # rails gems
 gem 'haml'
-
 group :assets do
   gem 'sass-rails',   '~> 3.1.5'
   gem 'coffee-rails', '~> 3.1.1'
@@ -21,7 +20,7 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
+gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :test do
   # Pretty printed test output
@@ -34,3 +33,4 @@ gem 'spree_slider'
 gem 'spree_news', :path => 'ext/spree_news', :require => 'spree_news'
 gem 'spree_static_content', :git => 'http://github.com/spree/spree_static_content', :branch => "1-0-stable"
 gem "ckeditor", "3.7.0.rc2"
+
