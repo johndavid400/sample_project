@@ -6,8 +6,8 @@
 <% end %>
 
 <% if @product.sound_link? %>
-  <h3>Audio File</h3>
   <div class="media">
+    <h3>Audio File</h3>
     <iframe width="300" height="225" src="http://www.youtube.com/embed/<%= @product.sound_link %>" frameborder="0"></iframe>
   </div>
 <% end %>

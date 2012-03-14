@@ -6,3 +6,4 @@ class HomeController < Spree::BaseController
   end
 
 end
+
